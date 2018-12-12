@@ -1,0 +1,6 @@
+framework module Pods_TestPostUsage {
+  umbrella header "Pods-TestPostUsage-umbrella.h"
+
+  export *
+  module * { export * }
+}

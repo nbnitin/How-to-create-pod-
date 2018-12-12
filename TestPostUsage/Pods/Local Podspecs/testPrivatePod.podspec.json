@@ -1,0 +1,23 @@
+{
+  "name": "testPrivatePod",
+  "version": "0.1.0",
+  "summary": "By far the most fantastic view I have seen in my entire life. No joke.",
+  "description": "This fantastic view changes its color gradually makes your app look fantastic!",
+  "homepage": "https://github.com/nbnitin/How-to-create-pod-",
+  "authors": {
+    "Nitin Bhatia": "nbnitin.bhatia@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/nbnitin/How-to-create-pod-.git"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "testPrivatePod/*",
+  "exclude_files": "testPrivatePod/info.plist",
+  "dependencies": {
+    "Alamofire": [
+
+    ]
+  }
+}

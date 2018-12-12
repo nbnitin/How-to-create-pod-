@@ -1,0 +1,23 @@
+PODS:
+  - Alamofire (4.8.0)
+  - testPrivatePod (0.1.0):
+    - Alamofire
+
+DEPENDENCIES:
+  - testPrivatePod (from `../testPrivatePod/`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+
+EXTERNAL SOURCES:
+  testPrivatePod:
+    :path: "../testPrivatePod/"
+
+SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  testPrivatePod: 668e3bea384e8c35c0b1648d3cbaf4b2ebb17a18
+
+PODFILE CHECKSUM: 351b4a3f1a954e14225575e771d9666f1f4938a8
+
+COCOAPODS: 1.5.3

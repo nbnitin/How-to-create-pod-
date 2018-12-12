@@ -8,8 +8,8 @@
 
 import Foundation
 
-class Sample{
-    class func sayHello(yourName: String)-> String{
+public class Sample{
+    public class func sayHello(yourName: String)-> String{
         return "Hello "+yourName
     }
 }
