@@ -29,6 +29,6 @@ This fantastic view changes its color gradually makes your app look fantastic!
  
 end
 
-create pod using pod spec lint --avoid-warnings
+create pod using pod spec lint --allow-warnings
 
 use it in your any project using by giving localpath pod 'name',path:=> 'local path'
