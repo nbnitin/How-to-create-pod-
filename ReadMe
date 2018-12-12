@@ -1,0 +1,34 @@
+Create your project if any pod or external party you want to use the install it too...
+then go to that folder from terminal and create a podspecs file
+touch filename.podspec (filename should match with your project name)
+open newly created file and paste below code
+Pod::Spec.new do |s|
+  s.name             = 'FantasticView' // Project name
+  s.version          = '0.1.0' //version
+  s.summary          = 'By far the most fantastic view I have seen in my entire life. No joke.' 
+ 
+  s.description      = <<-DESC
+This fantastic view changes its color gradually makes your app look fantastic!
+                       DESC
+ 
+  s.homepage         = 'https://github.com/<YOUR GITHUB USERNAME>/FantasticView' // it must be your git url
+  s.license          = { :type => 'MIT', :file => 'LICENSE' } // if gives error then comment this
+  s.author           = { '<YOUR NAME HERE>' => '<YOUR EMAIL HERE>' } // email of author
+  s.source           = { :git => 'https://github.com/<YOUR GITHUB USERNAME>/FantasticView.git', :tag => s.version.to_s }//your github
+ 
+  s.ios.deployment_target = '10.0'
+  s.source_files = 'FantasticView/FantasticView.swift' // FantasticView/*.swift(to include all files which is .swift), 'FantasticView/*' (to include everything)
+  //But when you include everything you have to exclude info.plist of yours
+  s.exclude_files = [
+    'Library/Resources/Localization/pseudo.lproj',
+    'Library/Resources/Localization/pseudo.lproj/Global.strings'
+  ] //include your info.plist if gives error in compiling command of pod
+
+  s.dependency 'SomeOtherPod'
+
+ 
+end
+
+create pod using pod spec lint --avoid-warnings
+
+use it in your any project using by giving localpath pod 'name',path:=> 'local path'
