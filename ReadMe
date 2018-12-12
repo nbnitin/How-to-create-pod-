@@ -31,4 +31,4 @@ end
 
 create pod using pod spec lint --allow-warnings
 
-use it in your any project using by giving localpath pod 'name',path:=> 'local path'
+use it in your any project using by giving localpath pod 'name',:path=> 'local path'
